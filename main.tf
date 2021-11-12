@@ -1,11 +1,3 @@
-# Terraform state will be stored in S3
-terraform {
-  backend "s3" {
-    bucket = "cicd-jen-ter-buck"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
-  }
-}
 
 # Use AWS Terraform provider
 provider "aws" {

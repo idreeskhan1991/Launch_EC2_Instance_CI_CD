@@ -15,7 +15,7 @@ provider "aws" {
 resource "aws_instance" "default" {
   ami                    = var.ami
   count                  = var.instance_count
-  vpc_security_group_ids = "terraform-default-sg"
+  vpc_security_group_ids = "terraform-SG"
   source_dest_check      = false
   instance_type          = var.instance_type
 
